@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Habit Tracker Login</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-container{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+h1{
+    color:#ff4f87;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#ff4f87;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff2e6f;
+}
+
+small{
+    color:#666;
+    font-size:12px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h1>Habit Tracker</h1>
+<h3>Login</h3>
+
+<form>
+
+<input type="text" placeholder="Username" required>
+
+<input 
+type="password"
+placeholder="Password"
+required
+pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+title="Password must contain at least 8 characters, including uppercase, lowercase, number, and special character"
+>
+
+<small>
+Password must be at least 8 characters and include uppercase, lowercase, number, and special character.
+</small>
+
+<br><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p>Don't have an account?</p>
+<a href="#">Register</a>
+
+</div>
+
+</body>
+</html>
